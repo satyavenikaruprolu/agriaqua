@@ -8,59 +8,93 @@
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">Your Company</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
+  <div class="container">
 
-          <li class="nav-item">
-            <a class="nav-link" href="#our_products">Our Products</a>
-          </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#adopt_seaweed">Adopt Seaweed</a>
-          </li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">puakaiagriaqua</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ourproducts">Our Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Explore More
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#adoptseaweed">Adopt Seaweed</a></li>
+                <li><a class="dropdown-item" href="#coralnurseries">Coral Nurseries</a></li>
+                <li><a class="dropdown-item" href="#vseaweedo">Vseaweedo</a></li>
+                <li><a class="dropdown-item" href="#ourapproach">Our Approach</a></li>
+                <li><a class="dropdown-item" href="#ourechosystem">Our Echosystem</a></li>
+                <li><a class="dropdown-item" href="#ourimpact">Our Impact</a></li>
+                <li><a class="dropdown-item" href="#gallery">Gallery</a></li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#vseaweedo">Vseaweedo</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#gallery">Gallery</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#our_approach">Our Approach</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#our_echosystem">Our Echosystem</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#our_impact">Our Impact</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    
 
-  <!-- Content -->
-  <div id="content">
-    <!-- The sections will be loaded here dynamically -->
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Content -->
+
+  <div id="sections" class=""> 
+    <!-- Adopt Seaweed Section -->
+    <div id="home" class="container w-100 vh-100">Home</div>
+
+    <!-- Adopt Seaweed Section -->
+    <div id="adoptseaweed" class="container w-100 vh-100">Adopt Seaweed</div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="container w-100 vh-100">contact</div>
+
+    <!-- Coral Nurseries Section -->
+    <div id="coralnurseries" class="container w-100 vh-100">Coral Nurseries</div>
+
+    <!-- Gallery Section -->
+    <div id="gallery" class="container w-100 vh-100">Gallery</div>
+
+    <!-- Our Approach Section -->
+    <div id="ourapproach"  class="container w-100 vh-100">Our Approach</div>
+
+    <!-- Our Echosystem Section -->
+    <div id="ourechosystem"  class="container w-100 vh-100">Our Echosystem</div>
+
+    <!-- Our Impact -->
+    <div id="ourimpact" class="container w-100 vh-100">Our Impact</div>
+
+    <!-- Our Products -->
+    <div id="ourproducts"  class="container w-100 vh-100">Our Products</div>
+
+    <!-- Vseaweedo Section-->
+    <div class="container w-100 vh-100">Vweeweedo</div>
   </div>
 
+</div>
   <!-- Include JavaScript and Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
