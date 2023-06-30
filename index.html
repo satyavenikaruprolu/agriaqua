@@ -8,17 +8,15 @@
 </head>
 <body>
   <!-- Navbar -->
-  <div class="container">
-
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <header class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-nav bg-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#home">puakaiagriaqua</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
@@ -32,8 +30,8 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Explore More
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#adoptseaweed">Adopt Seaweed</a></li>
+              <ul class="dropdown-menu custom-dropdown bg-success" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item text-light" href="#adoptseaweed">Adopt Seaweed</a></li>
                 <li><a class="dropdown-item" href="#coralnurseries">Coral Nurseries</a></li>
                 <li><a class="dropdown-item" href="#vseaweedo">Vseaweedo</a></li>
                 <li><a class="dropdown-item" href="#ourapproach">Our Approach</a></li>
@@ -46,9 +44,8 @@
           </ul>
         </div>
       </div>
-    
-
     </nav>
+  </header>
 
 
 
@@ -57,14 +54,21 @@
 
 
 
-
-
+  <div id="video-container">
+    <video autoplay muted loop>
+      <source src="rays_-_16165 (720p).mp4" type="video/mp4">
+      <!-- Include additional <source> elements for other video formats if needed -->
+      <!-- <source src="path/to/your/video.webm" type="video/webm"> -->
+      <!-- <source src="path/to/your/video.ogv" type="video/ogg"> -->
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
     <!-- Content -->
 
   <div id="sections" class=""> 
     <!-- Adopt Seaweed Section -->
-    <div id="home" class="container w-100 vh-100">Home</div>
+    <div id="home" class="section">Home</div>
 
     <!-- Adopt Seaweed Section -->
     <div id="adoptseaweed" class="container w-100 vh-100">Adopt Seaweed</div>
@@ -94,7 +98,6 @@
     <div class="container w-100 vh-100">Vweeweedo</div>
   </div>
 
-</div>
   <!-- Include JavaScript and Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
