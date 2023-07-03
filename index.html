@@ -5,10 +5,11 @@
   <!-- Include CSS and Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="agriaqua/css/index.css">
+  <link href="agriaqua/css/aos.css" rel="stylesheet">
 </head>
 <body>
   <!-- Navbar -->
-  <header class="container">
+  <header class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-dark custom-nav bg-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#home">puakaiagriaqua</a>
@@ -48,59 +49,59 @@
   </header>
 
 
+  <div id="sections-container">
+
+    <div id="home" class="container-fluid w-100 vh-100 p-0 m-0">
+      <div id="video-container">
+        <video autoplay muted loop>
+          <source src="rays_-_16165 (720p).mp4" type="video/mp4">
+        </video>
+        <div class="container-fluid home-landing ms-3">
+          <div class="row">
+            <div class="col col-md-3 bg-dark">
+              <h1 class="bg-danger">welcome to agriaqua</h1>
+              <p class="text-light">agriaqua is a seaweed farming company in India.</p>
+            </div>
+          </div>
+      </div>   
+      </div>
+    </div>
 
 
+    <div id="adoptseaweed" class="container-fluid w-100 vh-100">Adopt Seaweed</div>
 
 
+    <div id="contact" class="container-fluid w-100 vh-100">contact</div>
+
+    
+    <div id="coralnurseries" class="container-fluid w-100 vh-100">Coral Nurseries</div>
 
 
-  <div id="video-container">
-    <video autoplay muted loop>
-      <source src="rays_-_16165 (720p).mp4" type="video/mp4">
-      <!-- Include additional <source> elements for other video formats if needed -->
-      <!-- <source src="path/to/your/video.webm" type="video/webm"> -->
-      <!-- <source src="path/to/your/video.ogv" type="video/ogg"> -->
-      Your browser does not support the video tag.
-    </video>
-  </div>
+    <div id="gallery" class="container-fluid w-100 vh-100">Gallery</div>
 
-    <!-- Content -->
 
-  <div id="sections" class=""> 
-    <!-- Adopt Seaweed Section -->
-    <div id="home" class="section">Home</div>
+    <div id="ourapproach"  class="container-fluid w-100 vh-100">Our Approach</div>
 
-    <!-- Adopt Seaweed Section -->
-    <div id="adoptseaweed" class="container w-100 vh-100">Adopt Seaweed</div>
 
-    <!-- Contact Section -->
-    <div id="contact" class="container w-100 vh-100">contact</div>
+    <div id="ourechosystem"  class="container-fluid w-100 vh-100">Our Echosystem</div>
 
-    <!-- Coral Nurseries Section -->
-    <div id="coralnurseries" class="container w-100 vh-100">Coral Nurseries</div>
 
-    <!-- Gallery Section -->
-    <div id="gallery" class="container w-100 vh-100">Gallery</div>
+    <div id="ourimpact" class="container-fluid w-100 vh-100">Our Impact</div>
 
-    <!-- Our Approach Section -->
-    <div id="ourapproach"  class="container w-100 vh-100">Our Approach</div>
 
-    <!-- Our Echosystem Section -->
-    <div id="ourechosystem"  class="container w-100 vh-100">Our Echosystem</div>
+    <div id="ourproducts"  class="container-fluid w-100 vh-100">Our Products</div>
 
-    <!-- Our Impact -->
-    <div id="ourimpact" class="container w-100 vh-100">Our Impact</div>
 
-    <!-- Our Products -->
-    <div id="ourproducts"  class="container w-100 vh-100">Our Products</div>
-
-    <!-- Vseaweedo Section-->
-    <div class="container w-100 vh-100">Vweeweedo</div>
+    <div id="vseaweedo" class="container-fluid w-100 vh-100">Vweeweedo</div>
   </div>
 
   <!-- Include JavaScript and Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="agriaqua/js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="agriaqua/js/index.js"></script>
 </body>
 </html>

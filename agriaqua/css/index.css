@@ -10,30 +10,34 @@
     background-color: rgb(55, 182, 129);
 }
 
-#sections {
-    padding-top: 60px;
+#sections-container {
+    margin-top: 56px;
 }
 
-.section {
-    width: 100vw;
-    min-height: 100vh;
-}
 
 #home {
     width: 100vw !important;
 }
 
 #video-container {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1; 
 }
 
 #video-container video {
+    position: absolute;
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+    z-index: -1;
 }
+
+.home-landing {
+    position: absolute;
+    padding: 10px;
+    padding-left: 10px !important;
+}
+
