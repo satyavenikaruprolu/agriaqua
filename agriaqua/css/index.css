@@ -19,6 +19,7 @@
     position: relative;
     top: 0;
     left: 0;
+    overflow: hidden;
 }
 
 #video-container video {
@@ -29,6 +30,16 @@
     z-index: -1;
     left: 0;
     top: 0;
+    overflow: hidden;
+}
+
+#video-container img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 40%;
 }
 
 .home-landing {
@@ -50,15 +61,213 @@
 .home-2 {
     position: relative;
 }
+.home-2 {
+    color: white;
+}
+
 .future-of-seaweed {
-    background-image: url("../img/bg12.jpg");
     background-size: cover;
-    /* background-blend-mode: darken;  */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(9, 45, 74);
+    background-color: rgb(2, 35, 62);
     color: white;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.future-of-seaweed img {
+    position: absolute;
+    height: 50%;
+} 
+
+.future-of-seaweed h1 {
+    width: 70%;
+    position: absolute;
+    top: 40%;
+}
+
+/* explore button */
+.uvbtn1 {
+  --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+  --border-width: .125em;
+  --curve-size: .5em;
+  --blur: 30px;
+  --bg: #080312;
+  --color: #afffff;
+  color: var(--color);
+    /* use position: relative; so that BG is only for .btn */
+  position: relative;
+  isolation: isolate;
+  display: inline-grid;
+  place-content: center;
+  padding: .5em 1.5em;
+  font-size: 17px;
+  border: 0;
+  padding: 10px 60px !important;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+  clip-path: polygon(
+            /* Top-left */
+            0% var(--curve-size),
+
+            var(--curve-size) 0,
+            /* top-right */
+            100% 0,
+            100% calc(100% - var(--curve-size)),
+
+            /* bottom-right 1 */
+            calc(100% - var(--curve-size)) 100%,
+            /* bottom-right 2 */
+            0 100%);
+  transition: color 250ms;
+}
+
+.uvbtn1::after,
+.uvbtn1::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.uvbtn1::before {
+  background: var(--border-color);
+  background-size: 300% 300%;
+  animation: move-bg7234 5s ease infinite;
+  z-index: -2;
+}
+
+@keyframes move-bg7234 {
+  0% {
+    background-position: 31% 0%
+  }
+
+  50% {
+    background-position: 70% 100%
+  }
+
+  100% {
+    background-position: 31% 0%
+  }
+}
+
+.uvbtn1::after {
+  background: var(--bg);
+  z-index: -1;
+  clip-path: polygon(
+            /* Top-left */
+            var(--border-width) 
+            calc(var(--curve-size) + var(--border-width) * .5),
+
+            calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
+
+            /* top-right */
+            calc(100% - var(--border-width)) 
+            var(--border-width),
+
+            calc(100% - var(--border-width)) 
+            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+
+            /* bottom-right 1 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+            /* bottom-right 2 */
+            var(--border-width) calc(100% - var(--border-width)));
+  transition: clip-path 500ms;
+}
+
+.uvbtn1:where(:hover, :focus)::after {
+  clip-path: polygon(
+                /* Top-left */
+                calc(100% - var(--border-width)) 
+
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    
+                calc(100% - var(--border-width))
+
+                var(--border-width),
+    
+                /* top-right */
+                calc(100% - var(--border-width))
+
+                 var(--border-width),
+    
+                calc(100% - var(--border-width)) 
+
+                calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+    
+                /* bottom-right 1 */
+                calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) 
+                calc(100% - var(--border-width)),
+
+                /* bottom-right 2 */
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+                calc(100% - var(--border-width)));
+  transition: 200ms;
+}
+
+.uvbtn1:where(:hover, :focus) {
+  color: #fff;
+}
+
+.explore-btn {
+    position: absolute;
+    right: 50%;    
+    bottom: 10%;
+    transform: translateX(50%);
+}
+
+.our-mission {
+    background-image: url("../img/bg6.jpg");
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+}
+
+.our-mission h1 {
+    color: rgb(3, 40, 3);
+}
+
+.our-mission span {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(21, 47, 2);
+}
+.our-mission p {
+    color: rgb(228, 246, 217);
+    /* color: rgb(183, 242, 158); */
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.our-mission img {
+    position: absolute;
+    height: 10%;
+    right: 0;
+    top: 3%;
+}
+
+.what-we-do {
+    min-height: 100vh;
+    background-image: url('../img/bg8.jpg');
+    background-size: cover;
+    background-blend-mode: saturation;
+}
+
+.what-we-do h1 {
+    color: rgb(3, 40, 3);
+}
+
+.what-we-do p {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .what-we-do p {
+        width: 100%;
+    }
+}
+    
 }
