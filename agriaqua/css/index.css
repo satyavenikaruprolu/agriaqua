@@ -51,8 +51,9 @@
     position: relative;
 }
 .future-of-seaweed {
-    background-image: url("../img/bg8.jpg");
+    background-image: url("../img/bg12.jpg");
     background-size: cover;
+    /* background-blend-mode: darken;  */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
