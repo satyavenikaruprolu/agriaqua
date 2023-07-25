@@ -86,7 +86,7 @@
 .future-of-seaweed h1 {
     width: 70%;
     position: absolute;
-    top: 40%;
+    /* top: 40%; */
 }
 
 /* explore button */
@@ -99,8 +99,12 @@
   --color: #afffff;
   color: var(--color);
     /* use position: relative; so that BG is only for .btn */
-  position: relative;
+  /* position: relative; */
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
   isolation: isolate;
+  font-size: 10px;
   display: inline-grid;
   place-content: center;
   padding: .5em 1.5em;
@@ -215,6 +219,7 @@
     position: absolute;
     right: 50%;    
     bottom: 10%;
+    width: 100%;
     transform: translateX(50%);
 }
 
